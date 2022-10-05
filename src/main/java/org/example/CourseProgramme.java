@@ -4,16 +4,26 @@ import java.util.List;
 
 public class CourseProgramme {
 
+    public String cpName;
     public List<String> pModules;
     public List<String> students;
     public DateTime aST;
     public DateTime aFT;
 
-    public CourseProgramme(List<String> pModules, List<String> students, DateTime aST, DateTime aFT){
+    public CourseProgramme(String cpName, List<String> pModules, List<String> students, DateTime aST, DateTime aFT){
+        this.cpName = cpName;
         this.pModules = pModules;
         this.students = students;
         this.aST = aST;
         this.aFT = aFT;
+    }
+
+    public void setCpName(String name){
+        this.cpName = name;
+    }
+
+    public String getCpName(){
+        return this.cpName;
     }
 
     public void setModules(List<String> Modules){
