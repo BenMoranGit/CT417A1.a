@@ -8,55 +8,27 @@ public class Lecturer {
     public int lAge;
     public DateTime lDOB;
     public int lID;
-    public List<String> lModules;
+    public List<Module> lModules;
     public String lUsername;
 
-    public Lecturer(String name, int age, DateTime DOB, int ID, List<String> modules){
-        this.lName = name;
-        this.lAge = age;
-        this.lDOB = DOB;
-        this.lID = ID;
-        this.lModules = modules;
+    public Lecturer(String lName, int lAge, DateTime lDOB, int lID) {
+        this.lName = lName;
+        this.lAge = lAge;
+        this.lDOB = lDOB;
+        this.lID = lID;
     }
-
-    public String getUsername(){
+    public String getlName() {return lName;}
+    public void setlName(String lName) {this.lName = lName;}
+    public int getlAge() {return lAge;}
+    public void setlAge(int lAge) {this.lAge = lAge;}
+    public DateTime getlDOB() {return lDOB;}
+    public void setlDOB(DateTime lDOB) {this.lDOB = lDOB;}
+    public int getlID() {return lID;}
+    public void setlID(int lID) {this.lID = lID;}
+    public List<Module> getlModules() {return lModules;}
+    public void setlModules(List<Module> lModules) {this.lModules = lModules;}
+    public  String getlUsername(String lUsername) {
         this.lUsername = this.lName + this.lAge; /*int to string*/
         return this.lUsername;
     }
-
-    public void setName(String name) {
-        this.lName = name;
-    }
-    public String getName(){
-        return this.lName;
-    }
-
-    public void setAge(int age){
-        this.lAge = age;
-    }
-    public int getAge(){
-        return this.lAge;
-    }
-
-    public void setDOB(DateTime DOB){
-        this.lDOB = DOB;
-    }
-    public DateTime getDOB(){
-        return this.lDOB;
-    }
-
-    public void setID(int ID){
-        this.lID = ID;
-    }
-    public int getID(){
-        return this.lID;
-    }
-
-    public void setModules(List<String> modules){
-        this.lModules = modules;
-    }
-    public List getModules(){
-        return this.lModules;
-    }
-
 }

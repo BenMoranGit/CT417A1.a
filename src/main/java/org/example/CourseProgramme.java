@@ -5,48 +5,35 @@ import java.util.List;
 public class CourseProgramme {
 
     public String cpName;
-    public List<String> pModules;
-    public List<String> students;
+    public List<Module> pModules;
+    public List<Student> students;
     public DateTime aST;
     public DateTime aFT;
 
-    public CourseProgramme(String cpName, List<String> pModules, List<String> students, DateTime aST, DateTime aFT){
+    public CourseProgramme(String cpName, DateTime aST, DateTime aFT){
         this.cpName = cpName;
-        this.pModules = pModules;
-        this.students = students;
         this.aST = aST;
         this.aFT = aFT;
     }
 
-    public void setCpName(String name){
-        this.cpName = name;
-    }
-
-    public String getCpName(){
-        return this.cpName;
-    }
-
-    public void setModules(List<String> Modules){
-        this.pModules = Modules;
-    }
-    public List<String> getModules(){
+    public void setCpName(String name){this.cpName = name;}
+    public String getCpName(){return this.cpName;}
+    public void setModules(List<Module> Modules){this.pModules = Modules;}
+    public List<Module> getModules(){
         return this.pModules;
     }
-
-    public void setStudents(List<String> students){
+    public void setStudents(List<Student> students){
         this.students = students;
     }
-    public List<String> getStudents(){
+    public List<Student> getStudents(){
         return this.students;
     }
-
     public void setAST(DateTime aST){
         this.aST = aST;
     }
     public void getAFT(DateTime aFT){
         this.aFT = aFT;
     }
-
     public void setAFT(DateTime aFT){
         this.aFT = aFT;
     }
