@@ -7,7 +7,7 @@ public class Student {
     public int sAge;
     public DateTime sDOB;
     public int sID;
-    public List<CourseProgramme> sCourses;
+    public CourseProgramme course;
     public List<Module> sModules;
     public String sUsername;
 
@@ -31,8 +31,8 @@ public class Student {
     public DateTime getDOB(){return this.sDOB;}
     public void setID(int ID){this.sID = ID;}
     public int getID(){return this.sID;}
-    public void setCourses(List<CourseProgramme> sCourses){this.sCourses = sCourses;}
-    public List<CourseProgramme> getCourses(){return this.sCourses;}
+    public void setCourse(CourseProgramme sCourse){this.course = sCourse;}
+    public CourseProgramme getCourses(){return this.course;}
     public void setModules(List<Module> modules){this.sModules = modules;}
     public List<Module> getModules(){return this.sModules;}
 

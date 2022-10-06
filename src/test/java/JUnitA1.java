@@ -5,7 +5,6 @@ import org.example.Student;
 import org.joda.time.DateTime;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static org.testng.AssertJUnit.assertEquals;
@@ -38,8 +37,7 @@ public class JUnitA1 {
     @Test
     public void testLists()
     {
-    std1.setCourses(Arrays.asList(cp1));
-    assertEquals(Arrays.asList(cp1), std1.getCourses());
+    std1.setCourse(cp1);
+    assertEquals(cp1, std1.getCourses());
     }
-
 }
