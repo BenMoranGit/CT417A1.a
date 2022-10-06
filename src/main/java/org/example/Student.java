@@ -18,7 +18,8 @@ public class Student {
         this.sID = ID;
     }
     public String getUsername(){
-        this.sUsername = this.sName + this.sAge; /*int to string*/
+        String username = this.sName + this.sAge; /*int to string*/
+        this.sUsername = username.replaceAll("\\s","");
         return this.sUsername;
     }
     public void setName(String name) {this.sName = name;}

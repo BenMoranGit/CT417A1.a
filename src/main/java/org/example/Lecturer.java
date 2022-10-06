@@ -27,8 +27,9 @@ public class Lecturer {
     public void setlID(int lID) {this.lID = lID;}
     public List<Module> getlModules() {return lModules;}
     public void setlModules(List<Module> lModules) {this.lModules = lModules;}
-    public  String getlUsername(String lUsername) {
-        this.lUsername = this.lName + this.lAge; /*int to string*/
+    public  String getlUsername() {
+        String username = this.lName + this.lAge; /*int to string*/
+        this.lUsername = username.replaceAll("\\s","");
         return this.lUsername;
     }
 }

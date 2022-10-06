@@ -26,7 +26,7 @@ public class JUnitA1 {
     public void testSettingStudentVariable()
     {
         assertEquals("Bob Marley", std1.getName());
-        assertEquals("Bob Marley18", std1.getUsername());
+        assertEquals("BobMarley18", std1.getUsername());
         assertEquals(18, std1.getAge());
         assertEquals(19723725, std1.getID());
     }
