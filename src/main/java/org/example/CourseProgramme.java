@@ -31,14 +31,12 @@ public class CourseProgramme {
     public void setAST(DateTime aST){
         this.aST = aST;
     }
-    public void getAFT(DateTime aFT){
-        this.aFT = aFT;
-    }
+    public DateTime getAST(){return aST;}
     public void setAFT(DateTime aFT){
         this.aFT = aFT;
     }
-    public void getaFT(DateTime aFT){
-        this.aFT = aFT;
+    public DateTime getAFT(){
+        return aFT;
     }
 
 }

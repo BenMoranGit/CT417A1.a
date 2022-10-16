@@ -32,7 +32,7 @@ public class Student {
     public void setID(int ID){this.sID = ID;}
     public int getID(){return this.sID;}
     public void setCourse(CourseProgramme sCourse){this.course = sCourse;}
-    public CourseProgramme getCourses(){return this.course;}
+    public CourseProgramme getCourse(){return this.course;}
     public void setModules(List<Module> modules){this.sModules = modules;}
     public List<Module> getModules(){return this.sModules;}
 
