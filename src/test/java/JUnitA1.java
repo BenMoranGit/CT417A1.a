@@ -5,9 +5,7 @@ import org.example.Student;
 import org.joda.time.DateTime;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import static org.testng.AssertJUnit.assertEquals;
 
@@ -24,35 +22,45 @@ public class JUnitA1 {
     CourseProgramme cp1 = new CourseProgramme("ECE", DateTime.parse("1022-09-01T09:00:00.618-08:00"), DateTime.parse("1022-12-21T09:00:00.618-08:00"));
 
     @Test
-    public void testSettingAdding() {
-        /*Setting up students modules*/
+    public void addingModulesToStudent() {
         std1.setModules(Arrays.asList(m1, m2));
         std2.setModules(Arrays.asList(m1, m2));
-        /*Setting up students course programmes*/
+        assertEquals(Arrays.asList(m1, m2) , std1.getModules());
+        assertEquals(Arrays.asList(m1, m2) , std2.getModules());
+    }
+
+    @Test
+    public void addingCoursesToStudents() {
         std1.setCourse(cp1);
         std2.setCourse(cp1);
-        /*Setting up Lectures modules*/
+        assertEquals(cp1, std1.course);
+    }
+
+    @Test
+    public void addModulestoLecturer() {
         l1.setlModules(Arrays.asList(m1, m2));
-        /*Setting up Course Programme modules and lecturer*/
+        assertEquals(Arrays.asList(m1, m2), l1.getlModules());
+    }
+
+    @Test
+    public void addingModulesToCourse() {
         cp1.setModules(Arrays.asList(m1, m2));
+        assertEquals(Arrays.asList(m1, m2), cp1.getModules());
+    }
+    @Test
+    public void addStudentsToCP() {
         cp1.setStudents(Arrays.asList(std1, std2));
-        /*Setting up Modules students and courseprogrammes*/
+        assertEquals(Arrays.asList(std1, std2), cp1.getStudents());
+    }
+
+    @Test
+    public void addLANDStoM() {
         m1.setStudents(Arrays.asList(std1, std2));
         m1.setLecturer(l1);
         m2.setStudents(Arrays.asList(std1, std2));
         m2.setLecturer(l1);
-        /*Storing all created objects in lists respectively*/
-        List<Student> allStd = new ArrayList<Student>();
-        allStd.add(std1);
-        allStd.add(std2);
-        List<Lecturer> allL = new ArrayList<Lecturer>();
-        allL.add(l1);
-        List<Module> allM = new ArrayList<Module>();
-        allM.add(m1);
-        allM.add(m2);
-        List<CourseProgramme> allCP = new ArrayList<CourseProgramme>();
-        allCP.add(cp1);
-
+        assertEquals(l1, m2.getLecturer());
+        assertEquals(Arrays.asList(std1, std2), m1.getStudents());
     }
     @Test
     public void testingConstructorsAndGetters()

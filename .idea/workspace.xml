@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1defe44a-bda6-4dac-8986-c21db4a42017" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CourseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LecturerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ModuleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StudentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CourseProgramme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JUnitA1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JUnitA1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,8 +96,8 @@
     "spring.configuration.checksum": "30e7f070a433d5745273de58add3a4f9"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.JUnitA1 (1)">
-    <configuration name="JUnitA1 (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.LecturerTest">
+    <configuration name="LecturerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -110,7 +110,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;JUnitA1&quot;" />
+            <option value="&quot;LecturerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -120,7 +120,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JUnitA1.testSettingStudentVariable (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ModuleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -133,7 +133,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;JUnitA1.testSettingStudentVariable&quot;" />
+            <option value="&quot;ModuleTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -143,7 +143,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JUnitA1.testingAdding" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ModuleTest.testingCourses" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -156,7 +156,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;JUnitA1.testingAdding&quot;" />
+            <option value="&quot;ModuleTest.testingCourses&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -166,7 +166,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JUnitA1.testingConstructorsAndGetters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ModuleTest.testingLecturer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -179,7 +179,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;JUnitA1.testingConstructorsAndGetters&quot;" />
+            <option value="&quot;ModuleTest.testingLecturer&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,7 +189,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JUnitA1.testingSettersGetters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ModuleTest.testingStudents" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -202,7 +202,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;JUnitA1.testingSettersGetters&quot;" />
+            <option value="&quot;ModuleTest.testingStudents&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.JUnitA1 (1)" />
-        <item itemvalue="Gradle.JUnitA1.testingSettersGetters" />
-        <item itemvalue="Gradle.JUnitA1.testingAdding" />
-        <item itemvalue="Gradle.JUnitA1.testingConstructorsAndGetters" />
-        <item itemvalue="Gradle.JUnitA1.testSettingStudentVariable (1)" />
+        <item itemvalue="Gradle.LecturerTest" />
+        <item itemvalue="Gradle.ModuleTest" />
+        <item itemvalue="Gradle.ModuleTest.testingStudents" />
+        <item itemvalue="Gradle.ModuleTest.testingCourses" />
+        <item itemvalue="Gradle.ModuleTest.testingLecturer" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +231,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664355586250</updated>
       <workItem from="1664355590007" duration="61191000" />
-      <workItem from="1665902814764" duration="3909000" />
+      <workItem from="1665902814764" duration="7231000" />
     </task>
     <servers />
   </component>
